@@ -1,0 +1,2 @@
+# FPAutoRaise
+Автоподнятие для FunPay
