@@ -173,6 +173,10 @@ def main():
     with open('cookies.txt', 'r', encoding='utf-8') as f:
         cookies = f.read()
 
+    if cookies == '':
+        input('Добавьте куки в файл cookies.txt')
+        sys.exit()
+
     fp = FunPay(cookies, useragent)
 
     while True:
