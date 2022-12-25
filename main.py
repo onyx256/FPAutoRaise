@@ -36,22 +36,8 @@ class FunPay(object):
         parsed_cookies = ''
 
         for i in range(len(cookies)):
-            if cookies[i]['name'] == '_ym_d':
-                parsed_cookies += f'_ym_d={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == '_ym_uid':
-                parsed_cookies += f'_ym_uid={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == '_ga':
-                parsed_cookies += f'_ga={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == 'golden_key':
-                parsed_cookies += f'golden_key={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == 'PHPSESSID':
-                parsed_cookies += f'PHPSESSID={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == 'ym_isad':
-                parsed_cookies += f'ym_isad={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == '_gid':
-                parsed_cookies += f'_gid={cookies[i]["value"]}; '
-            elif cookies[i]['name'] == '_ym_visorc':
-                parsed_cookies += f'_ym_visorc={cookies[i]["value"]}; '
+            if cookies[i]['name'] == 'golden_key':
+                parsed_cookies += f'golden_key={cookies[i]["value"]};'
 
         self.cookies = parsed_cookies
         self.headers = self._get_headers(False)
