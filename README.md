@@ -8,3 +8,5 @@
 
 # Скачать (.exe)
 https://disk.yandex.ru/d/xBlLeyW-BbT9yQ
+
+# p.s. работает в 2025 году
